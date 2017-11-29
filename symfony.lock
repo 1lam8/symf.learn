@@ -85,5 +85,17 @@
     },
     "symfony/dotenv": {
         "version": "v4.0.0-rc2"
+    },
+    "symfony/process": {
+        "version": "v4.0.0-rc2"
+    },
+    "symfony/web-server-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "c72d107d077f1654428edaed69415d0228c1aefe"
+        }
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "55b10df1539e66f392b04dad7fbe4e05",
+    "content-hash": "f14f4b68692728e21a2e30b7fcee87df",
     "packages": [
         {
             "name": "psr/cache",
@@ -1132,6 +1132,55 @@
             "time": "2017-10-11T12:05:26+00:00"
         },
         {
+            "name": "symfony/process",
+            "version": "v4.0.0-RC2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "685dc11afcaaea72d7fd11c26835d12b091338f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/685dc11afcaaea72d7fd11c26835d12b091338f4",
+                "reference": "685dc11afcaaea72d7fd11c26835d12b091338f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-22T12:29:35+00:00"
+        },
+        {
             "name": "symfony/routing",
             "version": "v4.0.0-RC2",
             "source": {
@@ -1208,6 +1257,60 @@
                 "url"
             ],
             "time": "2017-11-24T14:34:08+00:00"
+        },
+        {
+            "name": "symfony/web-server-bundle",
+            "version": "v4.0.0-RC2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/web-server-bundle.git",
+                "reference": "76ef3282f727c42e9ba19d46a961dc7492af4d0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/web-server-bundle/zipball/76ef3282f727c42e9ba19d46a961dc7492af4d0a",
+                "reference": "76ef3282f727c42e9ba19d46a961dc7492af4d0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/process": "~3.4|~4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\WebServerBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony WebServerBundle",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-19T21:23:04+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1330,7 +1433,8 @@
     "aliases": [],
     "minimum-stability": "RC",
     "stability-flags": {
-        "symfony/lts": 20
+        "symfony/lts": 20,
+        "symfony/web-server-bundle": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
